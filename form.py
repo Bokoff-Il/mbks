@@ -14,14 +14,15 @@ from PyQt6.QtWidgets import QHeaderView
 class Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(1910, 1000)
+        Form.resize(1600, 800)
 
         self.table = QtWidgets.QTableWidget(Form)
-        self.table.setGeometry(QtCore.QRect(10, 0, 1890, 980))
+        self.table.setGeometry(QtCore.QRect(10, 0, 1590, 780))
         self.table.verticalHeader().setVisible(False)
         self.table.setObjectName("table")
         self.table.setColumnCount(11)
         self.table.setRowCount(0)
+
 
         item = QtWidgets.QTableWidgetItem()
         self.table.setHorizontalHeaderItem(0, item)
